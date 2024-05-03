@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <title>McCafe</title>
+
+  <!-- The favicon is linked to the "mccafe.png" image -->
+  <link rel="icon" href="images/mccafe.png" type="image/x-icon">
+
+  <!-- The CSS stylesheet "style.css" is linked to the HTML file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- The header section contains the logo of McCafe -->
+  <header>
+    <div class="logo">
+      <!-- The "logo.png" image serves as the logo and is displayed here -->
+      <img src="images/logo.png" alt="logo">
+    </div>
+  </header>
+
+  <!-- The main content of the page starts here -->
+  <main>
+    <div class="banner">
+      <!-- An image of a smoothie is displayed as a banner in the main section -->
+      <img src="images/smoothie.jpeg" alt="Smoothie">
+    </div>
+
+    <!-- The heading "Create Your Blend" introduces the smoothie selection options -->
+    <h1>Create Your Blend:</h1>
+
+    <!-- A container that holds various smoothie options -->
+    <div class="smoothie-container">
+
+      <!-- Smoothie 1: Passionfruit Punch -->
+      <div class="smoothie">
+        <!-- An image of the "Passionfruit Punch" smoothie is displayed -->
+        <img src="images/PassionfruitPunch.png" alt="Passionfruit Punch">
+        <!-- The name of the smoothie is "Passionfruit Punch" -->
+        <h2>Passionfruit Punch</h2>
+        <!-- A description of the ingredients in the smoothie is provided -->
+        <p>Made with fresh passionfruit, orange, and yogurt.</p>
+        <!-- A button to order the "Passionfruit Punch" smoothie is displayed -->
+        <button class="order-btn" onclick="displayOrderDetails('Passionfruit Punch')">Order Now</button>
+      </div>
+
+      <!-- Smoothie 2: Pineapple Paradise -->
+      <div class="smoothie">
+        <!-- An image of the "Pineapple Paradise" smoothie is displayed -->
+        <img src="images/PineappleParadise.png" alt="Pineapple Paradise">
+        <!-- The name of the smoothie is "Pineapple Paradise" -->
+        <h2>Pineapple Paradise</h2>
+        <!-- A description of the ingredients in the smoothie is provided -->
+        <p>Made with juicy pineapples, coconut milk, and honey.</p>
+        <!-- A button to order the "Pineapple Paradise" smoothie is displayed -->
+        <button class="order-btn" onclick="displayOrderDetails('Pineapple Paradise')">Order Now</button>
+      </div>
+
+      <!-- Smoothie 3: Blueberry Pomegranate -->
+      <div class="smoothie">
+        <!-- An image of the "Blueberry Pomegranate" smoothie is displayed with custom dimensions -->
+        <img src="images/BlueberryPomegranate.png" alt="Blueberry Pomegranate" style="width: 350px; height: 210px;">
+        <!-- The name of the smoothie is "Blueberry Pomegranate" -->
+        <h2 style="margin-top: -9px;">Blueberry Pomegranate</h2>
+        <!-- A detailed description of the ingredients in the smoothie is provided -->
+        <p>It features blueberry and raspberry purees with pomegranate juice as part of a smoothie base mix, plus ice and lowfat yogurt, blended together.</p>
+        <!-- A button to order the "Blueberry Pomegranate" smoothie is displayed -->
+        <button class="order-btn" onclick="displayOrderDetails('Blueberry Pomegranate')">Order Now</button>
+      </div>
+
+      <!-- Smoothie 4: Strawberry Banana -->
+      <div class="smoothie">
+        <!-- An image of the "Strawberry Banana" smoothie is displayed -->
+        <img src="images/StrawberryBanana.png" alt="Strawberry Banana">
+        <!-- The name of the smoothie is "Strawberry Banana" -->
+        <h2>Strawberry Banana</h2>
+        <!-- A description of the ingredients in the smoothie is provided -->
+        <p>Made with Strawberry and Banana and is well blend</p>
+        <!-- A button to order the "Strawberry Banana" smoothie is displayed -->
+        <button class="order-btn" onclick="displayOrderDetails('Strawberry Banana')">Order Now</button>
+      </div>
+
+      <!-- Smoothie 5: Blueberry -->
+      <div class="smoothie">
+        <!-- An image of the "Blueberry" smoothie is displayed -->
+        <img src="images/Blueberry.png" alt="Blueberry">
+        <!-- The name of the smoothie is "Blueberry" -->
+        <h2>Blueberry</h2>
+        <!-- A description of the ingredients in the smoothie is provided -->
+        <p>With its blend of our berries and healthy ingredients this smoothie is ideal for busy mornings.</p>
+        <!-- A button to order the "Blueberry" smoothie is displayed -->
+        <button class="order-btn" onclick="displayOrderDetails('Blueberry')">Order Now</button>
+      </div>
+
+      <!-- Smoothie 6: Real Fruit -->
+      <div class="smoothie">
+        <!-- An image of the "Real Fruit" smoothie is displayed with custom dimensions -->
+        <img src="images/RealFruit.png" alt="Real Fruit" style="width: 200px; height: 200px;">
+        <!-- The name of the smoothie is "Real Fruit" -->
+        <h2 style="margin-top: -3px;">Real Fruit</h2>
+        <!-- A description of the ingredients in the smoothie is provided -->
+        <p>Made with all the fruits which are blended well and served it</p>
+        <!-- A button to order the "Real Fruit" smoothie is displayed -->
+        <button class="order-btn" onclick="displayOrderDetails('Real Fruit')">Order Now</button>
+      </div>
+
+    </div>
+
+    <!-- A section to display the order details for the selected smoothie -->
+    <div class="order-details">
+      <!-- A heading for the order details section -->
+      <h2>Your Custom Blend</h2>
+      <!-- A container to display the selected smoothie's image and name -->
+      <div class="selected-smoothie">
+        <!-- The selected smoothie's image will be displayed here -->
+        <img id="selectedSmoothieImage" src="" alt="Selected Smoothie">
+        <!-- The name of the selected smoothie will be displayed here -->
+        <h3 id="selectedSmoothieName"></h3>
+      </div>
+
+      <!-- A form to customize the smoothie order -->
+      <form id="smoothieOrderForm">
+        <!-- A group of radio buttons to choose the size of the smoothie -->
+        <div class="form-group">
+          <h4>Size:</h4>
+          <!-- Radio button option for a small size smoothie -->
+          <input type="radio" id="small" name="size" value="Small">
+          <label for="small">Small $2.99</label>
+          <!-- Radio button option for a medium size smoothie -->
+          <input type="radio" id="medium" name="size" value="Medium">
+          <label for="medium">Medium $4.99</label>
+          <!-- Radio button option for a large size smoothie -->
+          <input type="radio" id="large" name="size" value="Large">
+          <label for="large">Large $5.99</label>
+        </div>
+        <br>
+
+        <!-- A form group to input the quantity of smoothies to order -->
+        <div class="form-group">
+          <label for="quantity">Quantity:</label>
+          <!-- An input field for the user to enter the quantity of smoothies (minimum value is 1) -->
+          <input type="number" id="quantity" name="quantity" min="1">
+        </div>
+
+        <!-- A form group with checkboxes to add additional boosts to the smoothie -->
+        <div class="form-group">
+          <h4>Boost Your Blend:</h4>
+          <!-- Checkbox option to add fresh fruits to the smoothie (+$1.50) -->
+          <input type="checkbox" id="topUpsFruit" name="topUps" value="Fruit">
+          <label for="topUpsFruit">Add Fresh Fruits +$1.50</label>
+          <!-- Checkbox option to add protein to the smoothie (+$2.50) -->
+          <input type="checkbox" id="topUpsProtein" name="topUps" value="Protein">
+          <label for="topUpsProtein">Add Protein +$2.50</label>
+          <!-- Checkbox option to add nuts to the smoothie (+$2.00) -->
+          <input type="checkbox" id="topUpsNuts" name="topUps" value="Nuts">
+          <label for="topUpsNuts">Add Nuts +$2.00</label>
+        </div>
+        <br>
+
+        <!-- A submit button to create the custom blend order -->
+        <input class="order-btn" type="submit" value="Create My Blend">
+      </form>
+
+      <!-- A thank you message that is initially hidden (to be displayed after submitting the form) -->
+      <h2 id="thankyou" style="display: none;">Thank you for creating your custom blend!</h2>
+      <!-- A paragraph to output the order details (to be filled dynamically using JavaScript) -->
+      <p id="output"></p>
+    </div>
+  </main>
+
+  <!-- The JavaScript file "script.js" is linked to the HTML file -->
+  <script src="script.js"></script>
+</body>
+</html>

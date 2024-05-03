@@ -1,0 +1,138 @@
+/* Set the background image for the body and adjust its properties for better display. */
+body{
+  background-image: url(images/backgroundimage.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  }
+  
+  /* Define the layout and positioning for the smoothie containers on the page. */
+  .smoothie-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  }
+  
+  /* Style individual smoothie items within the container. */
+  .smoothie {
+  width: 300px;
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+  box-shadow: 0 2px 4px black; 
+  }
+  
+  /* Apply a hover effect to smoothie items when users interact with them. */
+  .smoothie:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 12px rgba(0, 0, 0, 0.1); 
+  }
+  
+  /* Style the image inside each smoothie item. */
+  .smoothie img {
+  width: 350px;
+  height: 180px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  transition: transform 0.2s ease-in-out;
+  }
+  
+  /* Apply a hover effect to the smoothie image on mouseover. */
+  .smoothie:hover img {
+  transform: scale(1.1);
+  }
+  
+  /* Style the heading for each smoothie item. */
+  .smoothie h2 {
+  color: darkgreen;
+  margin-bottom: 5px;
+  }
+  
+  /* Style the paragraph text for each smoothie item. */
+  .smoothie p {
+  font-weight: bold;
+  color: darkgreen;
+  }
+  
+  /* Style the order button for each smoothie item. */
+  .order-btn {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  }
+  
+  /* Apply a hover effect to the order button on mouseover. */
+  .order-btn:hover {
+  background-color: #0056b3;
+  }
+  
+  /* Style the container for displaying order details. */
+  .order-details {
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  }
+  
+  /* Style the selected smoothie image inside the order details container. */
+  .selected-smoothie img {
+  width: 250px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  }
+  
+  /* Apply a hover effect to the selected smoothie image on mouseover. */
+  .selected-smoothie:hover img{
+  transform: scale(1.1);
+  }
+  
+  /* Style the 'thank you' message displayed after an order is placed. */
+  #thankyou {
+  color: #ab004f;
+  font-size: 18px;
+  margin-top: 10px;
+  }
+  
+  /* Apply general styles to the entire page. */
+  body {
+  font-family: canada-type-gibson, sans-serif;
+  margin: 0;
+  padding: 0;
+  }
+  
+  /* Style the header, including the logo and alignment. */
+  header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  /* Style the logo image within the navbar. */
+  .navbar-logo img {
+  width: 100px;
+  height: 100px;
+  }
+  
+  /* Style the banner elements with a fixed width and center alignment. */
+  .banner {
+  width: 250px;
+  height: 200px;
+  text-align: center;
+  display: block;
+  margin: 20px auto;
+  }
+  
+  /* Style the main heading of the page. */
+  h1 {
+  margin-top: 50px;
+  font-weight: bolder;
+  font-size: 40px;
+  text-align: center;
+  color: #ab004f;
+  }

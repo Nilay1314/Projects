@@ -1,0 +1,115 @@
+/* Sets box-sizing to border-box for all elements */
+* {
+  box-sizing: border-box;
+}
+
+/* Applies a yellow background color to the body */
+body {
+  background-color: yellow;
+}
+
+/* Styles the row container */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Styles the column container */
+.column {
+  flex: 0 1 calc(18% - 20px); /* Adjusted flex value and width calculation */
+  padding: 10px;
+  margin: 35px 1%; /* Adjusted margin */
+  border-radius: 25px;
+  box-shadow: 0 4px 20px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center; /* Center align all text */
+}
+
+/* Applies a scale transformation to images inside column on hover */
+.column:hover img {
+  transform: scale(1.1);
+}
+
+/* Styles the intro element with a width, height, and margins */
+.intro {
+  width: 20%;
+  height: auto; /* Adjusted height */
+  margin: 1% 38% 5%; /* Adjusted margins */
+}
+
+/* Applies a scale transformation and transition to intro on hover */
+.intro:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Center align intro image */
+.intro img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Clears floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Styles the heading element with margins, text alignment, and font size */
+.heading {
+  font-family: 'Dancing Script', cursive;
+  margin: -3% auto 0; /* Adjusted margin */
+  text-align: center;
+  font-size: 4vw; /* Adjusted font size */
+}
+
+/* Styles the images inside the column with margins, width, and height */
+.column img {
+  margin: 5% auto;
+  width: 40%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Styles the image names inside the column with a font size and margin */
+.column .image-name {
+  font-weight: 900;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 3vw; /* Adjusted font size */
+  margin: 0 auto;
+}
+
+/* Styles the buttons container with flex layout and margin */
+.buttons {
+  display: flex;
+  justify-content: center; /* Center align buttons */
+  margin: 20px 0; /* Adjusted margin */
+}
+
+/* Styles the small images inside the buttons container with width, height, and margins */
+.buttons .small-image,
+.buttons .small-img {
+  width: 20%;
+  margin: 1% 5% 0; /* Adjusted margins */
+  height: 20%;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Styles the image names inside the buttons container with a font size and margins */
+.buttons .img-name {
+  font-family: 'Dancing Script', cursive;
+  font-size: 4vw; /* Adjusted font size */
+  margin: 10% 0;
+}
+
+/* Applies a scale transformation and transition to small-image on hover */
+.small-image:hover,
+.small-img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}

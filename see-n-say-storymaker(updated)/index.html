@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>see-n-say-Story Maker</title>
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/main.css" />
+	<link rel="stylesheet" href="css/styles.css" /> <!--Linked external css-->
+	<link rel="icon" href="images/icon.png" type="image/x-icon"> <!-- for website icon-->
+
+<!-- Google font link is addded below-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+<!-- second google font link is added below-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500&display=swap" rel="stylesheet">
+	
+</head>
+
+<body>
+<!--For adding image of the book to make my webpage attractive-->
+	<img class="intro" src="images/intro.png" alt="one" onclick="speakNow('see-n-say-Story Maker. It is an electronic sound book')"/>
+	<p class="heading"><strong>Click on the numbers to play the sounds or name of all the pictures below it.<br>Moreover, you can also click on on individual images to play their sounds or names.</strong></p>
+	<div class="row">
+<!-- For column 1 and used inline css as it was easy to use in this situation-->
+		<div class="column" style="background-color:rgb(161, 6, 161);">
+		  <img src="images/1.png" alt="one" onclick="speakNow('first one is the Turkey says Cluck! Cluck! second one is Mom third one is Dad forth one is the Dog says bhow bhow fifth one is the teacher sixth one is Elephant says trumpet! trumpet! and last one is cat says Meow! Meow!')"/>
+		  <img src="images/The_turkey.png" alt="The Turkey" onclick="speakNow('it is the picture of the turkey says Cluck! Cluck!')"/>
+<!-- the below class "image-name" is used to give the css easily to it and adjust the font-size and many more properties and it is same for all other images-->
+		  <p class="image-name">The Turkey</p>
+		  <img src="images/mom.png" alt="Mom" onclick="speakNow('it is the picture of a Mom')"/>
+		  <p class="image-name">Mom</p>
+		  <img src="images/dad.webp" alt="Dad" onclick="speakNow('it is the picture of a Dad')"/>
+		  <p class="image-name">Dad</p>
+		  <img src="images/dog.webp" alt="Dog" onclick="speakNow('it is the picture of the dog says bhow! bhow!')"/>
+		  <p class="image-name">The dog</p>
+		  <img src="images/teacher.png" alt="teacher" onclick="speakNow('it is the picture of the teacher')"/>
+		  <p class="image-name">The Teacher</p>
+		  <img src="images/elephant.webp" alt="elephant" onclick="speakNow('it is the picture of the elephant says trumpet! trumpet!')"/>
+		  <p class="image-name">The elephant</p>
+		  <img src="images/cat.png" alt="cat" onclick="speakNow('it is the picture of the cat says Meow! Meow!')"/>
+		  <p class="image-name">The cat</p>
+		</div>
+<!-- for column 2-->
+		<div class="column" style="background-color:rgb(87, 87, 246);">
+		  <img src="images/2.png" alt="2" onclick="speakNow('First one is sat on second one is ate Third one is danced with Forth on is saw fifth one is does not like and last one is kissed')"/>
+		  <img src="images/sitting.png" alt="sat on" onclick="speakNow('it is the picture of sat on')"/>
+		  <p class="image-name">sat on</p>
+		  <img src="images/eating.png" alt="ate" onclick="speakNow('it is the picture of a ate')"/>
+		  <p class="image-name">ate</p>
+		  <img src="images/dance.png" alt="danced with" onclick="speakNow('it is the picture of a danced with')"/>
+		  <p class="image-name">danced with</p>
+		  <img src="images/saw.png" alt="saw" onclick="speakNow('it is the picture of the saw')"/>
+		  <p class="image-name">saw</p>
+		  <img src="images/doesn't like.png" alt="Doesn't like" onclick="speakNow('it is the picture of the Does not like')"/>
+		  <p class="image-name">Doesn't like</p>
+		  <img src="images/bird kkiss.png" alt="Kissed" onclick="speakNow('it is the picture of the Kissed')"/>
+		  <p class="image-name">Kissed</p>
+		</div>
+<!-- for column 3-->
+		<div class="column" style="background-color:rgb(19, 174, 19);">
+			<img src="images/3.png" alt="3" onclick="speakNow('First one is a funny second one is a scary Third one is a goofy Forth on is a slimy fifth one is a barking and last one is a fat')"/>
+			<img src="images/funny.png" alt="a funny" onclick="speakNow('it is the picture of a funny')"/>
+			<p class="image-name">a funny</p>
+			<img src="images/scary.png" alt="a scary" onclick="speakNow('it is the picture of a scary')"/>
+			<p class="image-name">a scary</p>
+			<img src="images/goofy.png" alt="a goofy" onclick="speakNow('it is the picture of a goofy')"/>
+			<p class="image-name">a goofy</p>
+			<img src="images/slimmy.png" alt="a slimy" onclick="speakNow('it is the picture of a slimy')"/>
+			<p class="image-name">a slimy</p>
+			<img src="images/barking.png" alt="a barking" onclick="speakNow('it is the picture of a barking')"/>
+			<p class="image-name">a barking</p>
+			<img src="images/fat.png" alt="a fat" onclick="speakNow('it is the picture of a fat')"/>
+			<p class="image-name">a fat</p>
+		</div>
+<!-- for column 4-->
+		<div class="column" style="background-color:orange;">
+			<img src="images/4.png" alt="4" onclick="speakNow('First one is goat says mehh! mehh! second one is monkey says hupp! hupp! Third one is fish says Purrs! Purrs! Forth on is cow says mouuuu! mouuuu! fifth one is frog says guck! guck! and sixth one is bug says chirping! chirping! and last one is worm says Gunk! Gunk!')"/>
+			<img src="images/goat.png" alt="Goat" onclick="speakNow('it is the picture of goat says mehh! mehh!')"/>
+			<p class="image-name">Goat</p>
+			<img src="images/monkey.png" alt="Monkey" onclick="speakNow('it is the picture of monkey says hupp! hupp!')"/>
+			<p class="image-name">Monkey</p>
+			<img src="images/fish.png" alt="Fish" onclick="speakNow('it is the picture of Fish says Purrs! Purrs!')"/>
+			<p class="image-name">Fish</p>
+			<img src="images/cow.png" alt="cow" onclick="speakNow('it is the picture of cow says mouuuu! mouuuu!')"/>
+			<p class="image-name">cow</p>
+			<img src="images/Frog.png" alt="frog" onclick="speakNow('it is the picture of frog says guck! guck!')"/>
+			<p class="image-name">Frog</p>
+			<img src="images/bug.png" alt="bug" onclick="speakNow('it is the picture of bug says chirping! chirping!')"/>
+			<p class="image-name">bug</p>
+			<img src="images/worm.png" alt="worm" onclick="speakNow('it is the picture of worm says Gunk! Gunk!')"/>
+			<p class="image-name">worm</p>
+		</div>
+<!-- for column 5-->
+		<div class="column" style="background-color:rgb(246, 144, 161);">
+			<img src="images/5.png" alt="5" onclick="speakNow('First one is on the moon second one is on the chair Third one is in my spaghetti Forth on is in my soup fifth one is on the grass and last one is in my shoes')"/>
+			<img src="images/moon.png" alt="Moon" onclick="speakNow('it is the picture of on the moon')"/>
+			<p class="image-name">On the moon</p>
+			<img src="images/chair.png" alt="chair" onclick="speakNow('it is the picture of on the chair')"/>
+			<p class="image-name">On the chair</p>
+			<img src="images/spaghetti.png" alt="spaghetti" onclick="speakNow('it is the picture of in my spaghetti')"/>
+			<p class="image-name">in my spaghetti</p>
+			<img src="images/soup.png" alt="soup" onclick="speakNow('it is the picture of in my soup')"/>
+			<p class="image-name">in my soup</p>
+			<img src="images/grass.png" alt="grass" onclick="speakNow('it is the picture of on the grass')"/>
+			<p class="image-name">on the grass</p>
+			<img src="images/shoes.png" alt="shoes" onclick="speakNow('it is the picture of in my shoes')"/>
+			<p class="image-name">in my shoes</p>
+		</div>
+	</div>
+<!-- for two buttons which are created for a surprise sound and a playback sound-->
+	<div class="buttons">
+		<img class="small-image" src="images/surprise.png" alt="surprise" onclick="speakNow('Hello! How are you?')"/>
+		<p class="img-name">Surprise</p>
+		<img class="small-img" src="images/playback.png" alt="playback" onclick="speakNow('Cluck! Cluck! bhow bhow')"/>
+		<p class="img-name">Playback</p>
+	</div>	 
+<!-- linked external javascript--> 
+	<script src="js/app.js"></script>
+</body>
+</html>
+<!--Learn many new things from https://www.w3schools.com/html/default.asp refer many thing from here-->
+<!--Thank you-->
